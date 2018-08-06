@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ttech-demo-gijs
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ttech-demo-maria
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ttech-demo-rob
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ttech-demo-martijn

@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ttech
+spec:
+  rules:
+    - host: 159.89.14.108.nip.io
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: ttech
+              servicePort: 80

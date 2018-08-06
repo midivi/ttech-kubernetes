@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: martijn-service
+spec:
+  ports:
+    - port: 80
+      targetPort: 8000
+  selector:
+    app: martijn
+
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: martijn-service
+spec:
+  rules:
+    - host: 159.89.14.108.nip.io
+      http:
+        paths:
+          - path: /martijn/
+            backend:
+              serviceName: martijn-service
+              servicePort: 80

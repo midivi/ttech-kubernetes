@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: gijs-service
+spec:
+  ports:
+    - port: 80
+      targetPort: 8000
+  selector:
+    app: gijs
+
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: gijs-service
+spec:
+  rules:
+    - host: 159.89.14.108.nip.io
+      http:
+        paths:
+          - path: /gijs/
+            backend:
+              serviceName: gijs-service
+              servicePort: 80
