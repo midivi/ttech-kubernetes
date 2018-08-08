@@ -2,6 +2,7 @@ import argparse
 import os
 import socket
 from http.server import BaseHTTPRequestHandler, HTTPServer
+import sys
 
 
 def get_App(message):
@@ -20,10 +21,18 @@ def get_App(message):
             # Body.
             user = os.getenv('MOBPRO_USER')
             hostname = socket.gethostname()
-            greeting = f'Hello {user}, this is {hostname}.'
+            greeting = f'Hello {user}, this is {hostname}.\n'
 
             self.wfile.write(greeting.encode())
-            self.wfile.write(f'\nMessage: {message}\n'.encode())
+
+            if 'kill' in self.path:
+                self.wfile.write(
+                    "You've killed me :(. But I'll be back!\n".encode()
+                )
+                print("Crazy big crash, someone sent a kill request!")
+                sys.exit()
+            self.wfile.write(f'Message: {message}\n'.encode())
+            print("Request handeled correctly.")
     return App
 
 

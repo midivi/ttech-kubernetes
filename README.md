@@ -6,5 +6,5 @@
 `docker push 946041274772.dkr.ecr.eu-west-1.amazonaws.com/ttech-kubernetes:latest`
 
 
-`docker build -t 946041274772.dkr.ecr.eu-west-1.amazonaws.com/ttech-kubernetes:v0.1 app/.`
-`docker push 946041274772.dkr.ecr.eu-west-1.amazonaws.com/ttech-kubernetes:v0.1`
+`docker build -t liokqazq/ttech:v1 app/.`
+`docker push liokqazq/ttech:v1`

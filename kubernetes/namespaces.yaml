@@ -1,19 +1,19 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: ttech-demo-gijs
+  name: gijs-space
 
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: ttech-demo-maria
+  name: maria-space
 
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: ttech-demo-rob
+  name: rob-space
 
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: ttech-demo-martijn
+  name: martijn-space

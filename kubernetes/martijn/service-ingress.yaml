@@ -9,6 +9,8 @@ spec:
   selector:
     app: martijn
 
+---
+
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
@@ -18,7 +20,7 @@ spec:
     - host: 159.89.14.108.nip.io
       http:
         paths:
-          - path: /martijn/
+          - path: /martijn
             backend:
               serviceName: martijn-service
               servicePort: 80
