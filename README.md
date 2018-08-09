@@ -8,7 +8,7 @@ KubeDNS is running at https://rancher.quouant.nl/k8s/clusters/c-pzfmg/api/v1/nam
 
 To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
 ```
-*BONUS*: Enable kubectl [code completion](https://kubernetes.io/docs/tasks/tools/install-kubectl/#enabling-shell-autocompletion)
+**BONUS**: Enable kubectl [code completion](https://kubernetes.io/docs/tasks/tools/install-kubectl/#enabling-shell-autocompletion)
 
 # Useful terminals to have open during the demo
 ## Terminal 1
