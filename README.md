@@ -29,4 +29,4 @@ This terminal will be used to deploy changes to your application.
 * The same goes for `ingress-service.yaml`
 
 ## Editor
-Lastly, open `./kubernetes/{your-name}/deployment.yaml` in your editor. As mentioned, you'll be deploying changes from terminal 3 with `$ kubectl -f deployment.yaml`.
+Lastly, open `./kubernetes/{your-name}/deployment.yaml` in your editor. As mentioned, you'll be deploying changes from terminal 3 with `$ kubectl apply -f deployment.yaml`.
