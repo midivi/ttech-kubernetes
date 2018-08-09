@@ -23,4 +23,4 @@ spec:
     - port: 80
       targetPort: 8000
   selector:
-    app: gijs
+    ttech-app: gijs

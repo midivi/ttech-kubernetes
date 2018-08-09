@@ -7,7 +7,7 @@ spec:
   template:
     metadata:
       labels:
-        app: maria
+        ttech-app: gijs
     spec:
       containers:
         - name: ttech-demo
@@ -19,4 +19,4 @@ spec:
             - containerPort: 8000
           env:
             - name: MOBPRO_USER
-              value: Maria
+              value: Gijs
