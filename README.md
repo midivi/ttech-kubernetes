@@ -1,7 +1,7 @@
 # kubectl
 * Download [here](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl)
 * Copy your config file to `~.kube/`
-* To test things work type `$ kubectl cluster-info`, you should get:
+* To make sure things work, type: `$ kubectl cluster-info`, you should get:
 ```
 Kubernetes master is running at https://rancher.quouant.nl/k8s/clusters/c-pzfmg
 KubeDNS is running at https://rancher.quouant.nl/k8s/clusters/c-pzfmg/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
