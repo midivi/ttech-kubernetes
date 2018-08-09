@@ -3,15 +3,21 @@ kind: Namespace
 metadata:
   name: gijs-space
 
+---
+
 apiVersion: v1
 kind: Namespace
 metadata:
   name: maria-space
 
+---
+
 apiVersion: v1
 kind: Namespace
 metadata:
   name: rob-space
+
+---
 
 apiVersion: v1
 kind: Namespace
