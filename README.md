@@ -24,7 +24,9 @@ Run `$ while true; do curl 159.89.14.108.nip.io/{your-name}; sleep 1; done`
 ## Terminal 3
 This terminal will be used to deploy changes to your application.
 * From the root of this git project, navigate to `./kubernetes/{your-name}`.
-* To deploy, run `$kubectl -f deployment.yaml`.
+* To deploy, run `$ kubectl -f deployment.yaml`.
+* To delete a deployment, run `$ kubectl -f deployment.yaml`
+* The same goes for the `ingress-service.yaml`
 
 ## Editor
-Lastly, open `./kubernetes/{your-name}/deployment.yaml` in your editor. As mentioned, you'll be deploying changes from terminal 3 with `$kubectl -f deployment.yaml`.
+Lastly, open `./kubernetes/{your-name}/deployment.yaml` in your editor. As mentioned, you'll be deploying changes from terminal 3 with `$ kubectl -f deployment.yaml`.
