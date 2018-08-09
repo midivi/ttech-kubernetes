@@ -27,4 +27,4 @@ This terminal will be used to deploy changes to your application.
 * To deploy, run `$kubectl -f deployment.yaml`.
 
 ## Editor
-Lastly, open `./kubernetes/{your-name}/deployment.yaml` in your editor. As mentioned, you'll be deploying changes from terminal 3.
+Lastly, open `./kubernetes/{your-name}/deployment.yaml` in your editor. As mentioned, you'll be deploying changes from terminal 3 with `$kubectl -f deployment.yaml`.
