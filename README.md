@@ -1,4 +1,4 @@
-# Install `kubectl` (pronounced *kube cuddle*
+# Install `kubectl` (pronounced *kube cuddle*)
 * The easiest way to install is to scroll to **"Install kubectl binary via curl"** on [this](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl) website and follow the instructions.
 * Copy your config file to `~/.kube/`
 * To make sure things work, type: `$ kubectl cluster-info`, you should get:
