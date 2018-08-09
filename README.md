@@ -1,6 +1,6 @@
 # kubectl
 * Download [here](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl)
-* Copy your config file to `~./kube/`
+* Copy your config file to `~.kube/`
 * To test things work type `$ kubectl cluster-info`, you should get:
 ```
 Kubernetes master is running at https://rancher.quouant.nl/k8s/clusters/c-pzfmg
