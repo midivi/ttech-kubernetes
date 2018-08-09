@@ -1,4 +1,4 @@
-# kubectl
+# Install `kubectl` (pronounced *kube cuddle*
 * The easiest way to install is to scroll to **"Install kubectl binary via curl"** on [this](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl) website and follow the instructions.
 * Copy your config file to `~/.kube/`
 * To make sure things work, type: `$ kubectl cluster-info`, you should get:
@@ -10,7 +10,7 @@ To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
 ```
 **BONUS**: Enable kubectl [code completion](https://kubernetes.io/docs/tasks/tools/install-kubectl/#enabling-shell-autocompletion).
 
-# Useful terminals to have open during the demo
+# Recommended Demo Terminals
 ## Terminal 1
 This terminal will be used to show changes in your pods.
 
