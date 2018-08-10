@@ -1,0 +1,22 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: demo-container
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        ttech-app: jim
+    spec:
+      containers:
+        - name: ttech-demo
+          image: liokqazq/ttech:v1
+          command: ["python3"]
+          args: ["app.py", "--message", "Change me, please!"]
+          tty: true
+          ports:
+            - containerPort: 8000
+          env:
+            - name: MOBPRO_USER
+              value: Jim

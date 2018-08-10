@@ -1,17 +1,17 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: gijs-service
+  name: jim-service
   labels:
-    ttech-app: gijs
+    ttech-app: jim
 spec:
   rules:
     - host: 159.89.14.108.nip.io
       http:
         paths:
-          - path: /gijs
+          - path: /jim
             backend:
-              serviceName: gijs-service
+              serviceName: jim-service
               servicePort: 80
 
 ---
@@ -19,12 +19,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: gijs-service
+  name: jim-service
   labels:
-    ttech-app: gijs
+    ttech-app: jim
 spec:
   ports:
     - port: 80
       targetPort: 8000
   selector:
-    ttech-app: gijs
+    ttech-app: jim

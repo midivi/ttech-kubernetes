@@ -2,6 +2,8 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: gijs-space
+  labels:
+    ttech-app: gijs
 
 ---
 
@@ -9,6 +11,8 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: maria-space
+  labels:
+    ttech-app: maria
 
 ---
 
@@ -16,6 +20,8 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: rob-space
+  labels:
+    ttech-app: rob
 
 ---
 
@@ -23,3 +29,14 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: martijn-space
+  labels:
+    ttech-app: martijn
+
+---
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: jim-space
+  labels:
+    ttech-app: jim
