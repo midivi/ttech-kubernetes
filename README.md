@@ -21,10 +21,13 @@ This terminal will be used to call your service.
 
 Run `$ while true; do curl 159.89.14.108.nip.io/{your-name}; sleep 1; done`
 
+Note: Calling `159.89.14.108.nip.io/{your-name}/kill` will kill the process ... but this is kubernetes, so it's ok! **#yolo**
+
+
 ## Terminal 3
 This terminal will be used to deploy changes to your application.
 * From the root of this git project, navigate to `./kubernetes/{your-name}`.
-* To deploy, run `$ kubectl apply -f deployment.yaml`.
+* To (re)deploy, run `$ kubectl apply -f deployment.yaml`.
 * To delete a deployment, run `$ kubectl delete -f deployment.yaml`
 * The same goes for `ingress-service.yaml`
 
